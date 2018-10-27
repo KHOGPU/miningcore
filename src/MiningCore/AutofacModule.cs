@@ -26,6 +26,7 @@ using MiningCore.Banning;
 using MiningCore.Blockchain.Bitcoin;
 using MiningCore.Blockchain.Bitcoin.DaemonResponses;
 using MiningCore.Blockchain.BitcoinGold;
+using MiningCore.Blockchain.Khorium;
 using MiningCore.Blockchain.Dash;
 using MiningCore.Blockchain.Dash.DaemonResponses;
 using MiningCore.Blockchain.Ethereum;
@@ -140,7 +141,7 @@ namespace MiningCore
 
             //////////////////////
             // Flo
-            
+
             builder.RegisterType<FloJobManager>()
                 .AsSelf();
 
@@ -167,6 +168,13 @@ namespace MiningCore
 
             builder.RegisterType<BitcoinGoldJobManager>()
                 .AsSelf();
+
+            //////////////////////
+            // Khorium
+
+            builder.RegisterType<KhoriumJobManager>()
+                .AsSelf();
+
 
             base.Load(builder);
         }

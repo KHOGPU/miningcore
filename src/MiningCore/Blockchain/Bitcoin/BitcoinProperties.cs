@@ -136,6 +136,7 @@ namespace MiningCore.Blockchain.Bitcoin
             // Equihash
             { CoinType.ZEC, equihashCoin },
             { CoinType.BTG, equihashCoin },
+            { CoinType.KHO, equihashCoin },
             { CoinType.ZCL, equihashCoin },
             { CoinType.ZEN, equihashCoin },
             { CoinType.BTCP, equihashCoin },

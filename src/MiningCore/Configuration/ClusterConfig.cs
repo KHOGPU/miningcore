@@ -47,6 +47,7 @@ namespace MiningCore.Configuration
         MONA, // Monacoin
         VTC, // Vertcoin
         BTG, // Bitcoin Gold
+        KHO, // Khorium
         GLT, // Globaltoken
         ELLA, // Ellaism
         AEON, // AEON
@@ -62,7 +63,7 @@ namespace MiningCore.Configuration
         PAK, // PAKcoin
         CANN, // CannabisCoin
         RVN,  // Ravencoin
-        PGN,  // Pigeoncoin 
+        PGN,  // Pigeoncoin
     }
 
     public class CoinConfig
@@ -343,7 +344,7 @@ namespace MiningCore.Configuration
         public string PublishUrl { get; set; }
 
         /// <summary>
-        /// If set to true, the relay will "Connect" to the url, rather than "Bind" it 
+        /// If set to true, the relay will "Connect" to the url, rather than "Bind" it
         /// </summary>
         public bool Connect { get; set; }
     }

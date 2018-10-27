@@ -156,6 +156,7 @@ namespace MiningCore.Blockchain.Bitcoin
             {CoinType.ZCL, "t1MFU1vD3YKgsK6Uh8hW7UTY8mKAV2xVqBr"},
             {CoinType.ZEN, "znigQacfTvRiwD2TRhwkBHLNchQ2AZisD94"},
             {CoinType.BTG, "GRao6KHQ8a4GUjAZRVbeCLfRbSkJQQaeMg"},
+            {CoinType.KHO, "KXdZ6xEtAimFHBTSh4DNQpZb6KAot3ZKF9"},
             {CoinType.MOON, "2QvpGimMYLyqKsczQXZjv56h6me3M8orwj" },
             {CoinType.XVG, "D5xPoHLM6HPkwWSqAweECTSQirJBmRjS8i" },
             {CoinType.XMR, "475YVJbPHPedudkhrcNp1wDcLMTGYusGPF5fqE7XjnragVLPdqbCHBdZg3dF4dN9hXMjjvGbykS6a77dTAQvGrpiQqHp2eH"},

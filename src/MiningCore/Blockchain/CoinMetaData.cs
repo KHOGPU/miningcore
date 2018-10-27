@@ -50,6 +50,7 @@ namespace MiningCore.Blockchain
             { CoinType.GLT, new Dictionary<string, string> { { string.Empty, $"https://bchain.info/GLT/block/{BlockHeightPH}" }}},
             { CoinType.VTC, new Dictionary<string, string> { { string.Empty, $"https://bchain.info/VTC/block/{BlockHeightPH}" }}},
             { CoinType.BTG, new Dictionary<string, string> { { string.Empty, $"https://explorer.bitcoingold.org/insight/block/{BlockHashPH}" } }},
+            { CoinType.KHO, new Dictionary<string, string> { { string.Empty, $"https://explorer.khorium.org/block/{BlockHashPH}" } }},
             { CoinType.ELLA, new Dictionary<string, string> { { string.Empty, $"https://explorer.ellaism.org/block/{BlockHeightPH}" }}},
             { CoinType.EXP, new Dictionary<string, string> { { string.Empty, $"http://www.gander.tech/blocks/{BlockHeightPH}" }}},
             { CoinType.AEON, new Dictionary<string, string> { { string.Empty, $"https://chainradar.com/aeon/block/{BlockHeightPH}" }}},
@@ -88,6 +89,7 @@ namespace MiningCore.Blockchain
             { CoinType.GLT, "https://bchain.info/GLT/tx/{0}" },
             { CoinType.VTC, "https://bchain.info/VTC/tx/{0}" },
             { CoinType.BTG, "https://explorer.bitcoingold.org/insight/tx/{0}" },
+            { CoinType.KHO, "https://explorer.khorium.org/tx/{0}" },
             { CoinType.ELLA, "https://explorer.ellaism.org/tx/{0}" },
             { CoinType.EXP, "http://www.gander.tech/tx/{0}" },
             { CoinType.AEON, "https://chainradar.com/aeon/transaction/{0}" },
@@ -125,6 +127,7 @@ namespace MiningCore.Blockchain
             { CoinType.GLT, "https://bchain.info/GLT/addr/{0}" },
             { CoinType.VTC, "https://bchain.info/VTC/addr/{0}" },
             { CoinType.BTG, "https://explorer.bitcoingold.org/insight/address/{0}" },
+            { CoinType.KHO, "https://explorer.khorium.org/address/{0}" },
             { CoinType.ELLA, "https://explorer.ellaism.org/addr/{0}" },
             { CoinType.EXP, "http://www.gander.tech/address/{0}" },
             { CoinType.MOON, "https://chainz.cryptoid.info/moon/address.dws?{0}.htm" },
@@ -141,7 +144,7 @@ namespace MiningCore.Blockchain
         private const string Ethash = "Ethash";
         private const string Cryptonight = "Cryptonight";
         private const string CryptonightLight = "Cryptonight-Light";
-	private const string EquihashBTG = "Equihash-BTG / BgoldPoW ";
+	      private const string EquihashBTG = "Equihash-BTG / BgoldPoW ";
 
         public static readonly Dictionary<CoinType, Func<CoinType, string, string>> CoinAlgorithm = new Dictionary<CoinType, Func<CoinType, string, string>>
         {
@@ -166,6 +169,7 @@ namespace MiningCore.Blockchain
             { CoinType.GLT, BitcoinProperties.GetAlgorithm },
             { CoinType.VTC, BitcoinProperties.GetAlgorithm },
             { CoinType.BTG, (coin, alg)=> EquihashBTG },
+            { CoinType.KHO, (coin, alg)=> EquihashBTG },
             { CoinType.ELLA, (coin, alg)=> Ethash },
             { CoinType.EXP, (coin, alg)=> Ethash },
             { CoinType.MOON, BitcoinProperties.GetAlgorithm },
