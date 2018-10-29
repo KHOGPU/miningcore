@@ -40,6 +40,7 @@ Ethereum Classic | Yes | Yes | | Requires [Parity](https://github.com/paritytech
 Expanse | Yes | Yes | | - **Not working for Byzantinium update**<br>- Requires [Parity](https://github.com/paritytech/parity/releases)
 DASH | Yes | Yes | |
 Bitcoin Gold | Yes | Yes | |
+Khorium | Yes | Yes | |
 Bitcoin Cash | Yes | Yes | |
 Vertcoin | Yes | Yes | |
 Monacoin | Yes | Yes | |
@@ -134,7 +135,7 @@ Install the [.Net Core 2.0 SDK](https://www.microsoft.com/net/download/core) for
 #### Linux (Ubuntu example)
 
 ```console
-$ apt-get update -y 
+$ apt-get update -y
 $ apt-get -y install git cmake build-essential libssl-dev pkg-config libboost-all-dev libsodium-dev
 $ git clone https://github.com/coinfoundry/miningcore
 $ cd miningcore/src/MiningCore
